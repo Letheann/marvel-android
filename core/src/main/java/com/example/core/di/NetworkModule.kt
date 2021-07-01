@@ -10,9 +10,6 @@ import retrofit2.Retrofit
 object CoreModule {
     fun getModules() = arrayListOf(networkModule)
     private val networkModule = module {
-        single {
-
-            Retrofit.Builder().build(BuildConfig.BASE_URL).provideInterface<MarvelService>() }
-
+        single { Retrofit.Builder().build(BuildConfig.BASE_URL).provideInterface<MarvelService>() }
     }
 }
