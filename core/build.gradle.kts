@@ -18,8 +18,8 @@ android {
             it.buildConfigStringField("KEY_PUBLIC", getLocalProperty("key.public"))
             it.buildConfigStringField("KEY_PRIVATE", getLocalProperty("key.private"))
         } catch (ignored: Exception) {
-            throw InvalidUserDataException("Defina as chaves 'marvel.key.public' e" +
-                    "'marvel.key.private' em local.properties.")
+            throw InvalidUserDataException("Defina as chaves 'key.public' e" +
+                    "'key.private' em local.properties.")
         }
     }
 }
