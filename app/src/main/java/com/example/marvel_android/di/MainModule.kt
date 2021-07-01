@@ -4,12 +4,5 @@ import org.koin.dsl.module
 
 object MainModule{
     fun getModules() = arrayListOf(mainModule)
-
-
-
-
-    private val mainModule = module {
-
-
-    }
+    private val mainModule = module {}
 }
