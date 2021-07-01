@@ -23,24 +23,17 @@ object ListCharsModule {
 
     private val domainModule = module {
         factory { CoroutineScope(Dispatchers.Main.immediate + SupervisorJob()) }
-        factory { CharMapper()
-        }
-        factory { MarvelRepository(get())
-        }
-        factory { PagingDataSource(get(),
-            get(), get()) }
-        factory { PagingDataSourceFactory(get())
-        }
+        factory { CharMapper() }
+        factory { MarvelRepository(get()) }
+        factory { PagingDataSource(get(), get(), get()) }
+        factory { PagingDataSourceFactory(get()) }
     }
 
     private val viewModelModule = module {
-        viewModel { CharsViewModel(get())
-        }
+        viewModel { CharsViewModel(get()) }
     }
 
     private val adapterModule = module {
-        factory { CharsListAdapter(get())
-
-        }
+        factory { CharsListAdapter(get()) }
     }
 }
