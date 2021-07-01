@@ -12,10 +12,6 @@ class MainApplication : Application() {
         super.onCreate()
         val modules = MainModule.getModules()
         modules.addAll(CoreModule.getModules())
-
-
-
-
         startKoin {
             androidContext(this@MainApplication)
             androidLogger()
