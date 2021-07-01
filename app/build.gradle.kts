@@ -10,8 +10,6 @@ plugins {
     id(BuildPlugins.KOTLIN_KAPT)
     id(BuildPlugins.KOTLIN_ALL_OPEN)
     id(BuildPlugins.NAVIGATION_SAFE_ARGS)
-    id(BuildPlugins.JACOCO)
-    id(BuildPlugins.GRAPH_GENERATOR)
 }
 
 android {
@@ -95,10 +93,6 @@ android {
             java.srcDir("src/androidTest/kotlin")
         }
     }
-}
-
-junitJacoco {
-    includeNoLocationClasses = true
 }
 
 dependencies {
