@@ -7,7 +7,4 @@ object BuildPlugins {
     const val KOTLIN_ALL_OPEN = "kotlin-allopen"
 
     const val NAVIGATION_SAFE_ARGS = "androidx.navigation.safeargs.kotlin"
-    const val JACOCO = "com.vanniktech.android.junit.jacoco"
-    const val GRAPH_GENERATOR = "com.vanniktech.dependency.graph.generator"
-
 }
