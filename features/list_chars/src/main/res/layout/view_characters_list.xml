@@ -19,7 +19,6 @@
             android:id="@+id/characters_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:theme="@style/AppTheme.BackgroundStyle"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
             app:itemSpacing="@{@dimen/characters_list_item_padding}"
